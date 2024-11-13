@@ -1,4 +1,10 @@
 # Semantic_filtering_of_virology_papers
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.7%2B-EE4C2C?logo=pytorch&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-1.1%2B-150458?logo=pandas&logoColor=white)
+![Sentence-BERT](https://img.shields.io/badge/Sentence--BERT-MiniLM--L6--v2-green)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.3%2B-blue?logo=matplotlib&logoColor=white)
+
 This task aims to filter and classify academic papers from a dataset created through a keyword-based search on PubMed. The dataset is provided in CSV format and contains 11,450 records. The specific goal is to identify papers that implement deep learning neural network-based solutions in virology and epidemiology.
 # Goals 
 - **Implement NLP-Based Filtering**: Apply semantic natural language processing techniques to filter and exclude papers that do not involve deep learning applications in virology or epidemiology.
