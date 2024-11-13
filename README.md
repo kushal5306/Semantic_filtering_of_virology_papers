@@ -43,13 +43,13 @@ Each step of the project will be discussed in detail in the following sections, 
 
 In this step, the raw dataset (`collection_with_abstracts.csv`) is prepared for further analysis. The `data_pre_processing.py` script cleans and processes the data by handling missing values, normalizing text, and removing irrelevant information. The output of this step is a preprocessed dataset (`preprocessed_dataset.csv`) that is ready for semantic filtering and further classification in the subsequent steps.
 
-### Step 2: Semantic Filtering
+# Step 2: Semantic Filtering
 
 This step involves filtering the dataset to retain only those papers that utilize deep learning approaches in virology and epidemiology. Instead of relying on keyword-based filtering, which can miss relevant papers due to variations in terminology, this approach uses **semantic similarity** to match each paper against a comprehensive set of prompts representing relevant deep learning applications.
 
 #### Methodology
 - **Model**: The `SentenceTransformer` model (`all-MiniLM-L6-v2`) is used to generate embeddings for both the prompts and the papers. This model captures semantic meaning, allowing for more accurate matches even when specific keywords are not used. This model is quite small and was quite nice to use in collabs free environment.
-- **Prompts**: A wide range of prompts has been created, covering topics like deep learning applications, virology, epidemiology, text mining, computer vision, and multimodal AI approaches. These prompts represent the scope of relevant research areas. This were developed by extensively studying the dataset and by trial and error method to capture more relevant papers 
+- **Prompts**: A wide range of prompts has been created, covering topics like deep learning applications, virology, epidemiology, text mining, computer vision, and multimodal AI approaches. These prompts represent the scope of relevant research areas. This were developed by extensively studying the dataset and by trial and error method to capture as many relevant papers as possible.
 - **Threshold Filtering**: Multiple thresholds (0.4, 0.5, 0.6, 0.7, 0.8) are used to filter papers based on their similarity scores. By adjusting these thresholds, we can control the strictness of filtering:
   - **Lower Thresholds** (e.g., 0.4, 0.5): Capture a broader range of potentially relevant papers, but may include more noise.
   - **Higher Thresholds** (e.g., 0.7, 0.8): Provide stricter filtering, retaining only papers with high similarity to the prompts, thus likely more focused on deep learning in virology/epidemiology.
