@@ -5,6 +5,16 @@
 ![Sentence-BERT](https://img.shields.io/badge/Sentence--BERT-MiniLM--L6--v2-green)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.3%2B-blue?logo=matplotlib&logoColor=white)
 
+# Table of Contents
+
+1. [Goals](#goals)
+2. [Project Structure & Set Up](#project-structure--set-up)
+3. [Step 1: Data Preprocessing](#step-1-data-preprocessing)
+4. [Step 2: Semantic Filtering](#step-2-semantic-filtering)
+5. [Step 3: Method Type Classification](#step-3-method-type-classification)
+6. [Step 4: Method Identification and Classification](#step-4-method-identification-and-classification)
+
+
 This task aims to filter and classify academic papers from a dataset created through a keyword-based search on PubMed. The dataset is provided in CSV format and contains 11,450 records. The specific goal is to identify papers that implement deep learning neural network-based solutions in virology and epidemiology.
 # Goals 
 - **Implement NLP-Based Filtering**: Apply semantic natural language processing techniques to filter and exclude papers that do not involve deep learning applications in virology or epidemiology.
